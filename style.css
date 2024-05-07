@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--White);
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  background-color: var(--White);
+  margin: 50px auto;
+  width: 95%;
+  height: 600px;
+}
+
+/* The First Div */
+
+.container .first-div {
+  width: 100%;
+  height: 45%;
+  margin-top: -18px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--Cobalt-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background) 1%,
+    var(--Light-royal-blue-background)
+  );
+}
+
+/* The paragraph in the first div */
+.container div.first-div > p {
+  padding: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.container .first-div p {
+  color: var(--Light-lavender);
+}
+
+/* Circle from h2 an make a sentence */
+.container .first-div h2 {
+  color: var(--Pale-blue);
+  font-size: 40px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    var(--Persian-blue-circle),
+    var(--Violet-blue-circle)
+  );
+}
+
+.container .first-div h2:before {
+  content: "of 100";
+  position: absolute;
+  font-size: 12px;
+  bottom: 10px;
+  color: var(--Light-lavender);
+  filter: brightness(0.7);
+}
+
+/* H3 and its paragraph */
+.container .first-div h3 {
+  color: var(--White);
+  margin: 10px auto 0 auto;
+  width: fit-content;
+}
+
+.container .first-div p:last-of-type {
+  font-size: 12px;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+/* The start of the second div */
+.container .second-div {
+  height: 55%;
+  position: relative;
+}
+
+.container .second-div h4 {
+  padding-left: 20px;
+}
+
+/* Div of a reaction */
+.container .second-div .Reaction {
+  color: var(--Light-red);
+  width: 85%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: red;
+  background-color: hsl(0, 100%, 67%, 0.1);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container .second-div .Reaction img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.container .second-div .Reaction::before {
+  content: "Reaction";
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+}
+
+.container .second-div .Reaction p {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 13px;
+  color: #9d9d9b;
+}
+
+.container .second-div .Reaction p span {
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+
+/* Div of a memory */
+.container .second-div .Memory {
+  color: var(--Orangey-yellow);
+  width: 85%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: yellow;
+  background-color: hsl(39, 100%, 56%, 0.1);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container .second-div .Memory img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.container .second-div .Memory::before {
+  content: "Memory";
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+}
+
+.container .second-div .Memory p {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 13px;
+  color: #9d9d9b;
+}
+
+.container .second-div .Memory p span {
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+
+/* Div of a verbal */
+.container .second-div .Verbal {
+  color: var(--Green-teal);
+  width: 85%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: hsl(166, 100%, 37%, 0.1);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container .second-div .Verbal img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.container .second-div .Verbal::before {
+  content: "Verbal";
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+}
+
+.container .second-div .Verbal p {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 13px;
+  color: #9d9d9b;
+}
+
+.container .second-div .Verbal p span {
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+
+/* Div of a visual */
+.container .second-div .Visual {
+  color: var(--Cobalt-blue);
+  width: 85%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: hsl(234, 85%, 45%, 0.1);
+  position: relative;
+}
+
+.container .second-div .Visual img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.container .second-div .Visual::before {
+  content: "Visual";
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+}
+
+.container .second-div .Visual p {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 13px;
+  color: #9d9d9b;
+}
+
+.container .second-div .Visual p span {
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+
+/* The button */
+.container .second-div button {
+  border-radius: 20px;
+  border: none;
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 40px;
+}
+
+.container .second-div button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background) 1%,
+    var(--Light-royal-blue-background)
+  );
+}
+
+@media (min-width: 470px) and (max-width: 799px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+    margin-top: 150px;
+    box-shadow: 10px 15px 11px var(--Pale-blue);
+    border-radius: 15px;
+  }
+
+  .container .first-div {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: 0;
+  }
+
+  .container .first-div h2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container .first-div h2::before {
+    bottom: 20px;
+  }
+
+  .container .second-div {
+    width: 50%;
+    height: 100%;
+  }
+
+  .container .second-div button {
+    bottom: 15px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 799.1px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 360px;
+    width: 740px;
+    margin-top: 150px;
+    box-shadow: 10px 15px 11px var(--Pale-blue);
+    border-radius: 15px;
+  }
+
+  .container .first-div {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: 0;
+  }
+
+  .container .first-div h2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container .first-div h2::before {
+    bottom: 20px;
+  }
+
+  .container .second-div {
+    width: 50%;
+    height: 100%;
+  }
+
+  .container .second-div button {
+    bottom: 25px;
+    height: 35px;
+  }
+}
